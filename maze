@@ -1,0 +1,5 @@
+#! /usr/bin/env ruby
+
+Dir['./lib/*.rb'].each{ |f| require f }
+
+LaserMaze::App.new(ARGV[0], ARGV[1]).run
